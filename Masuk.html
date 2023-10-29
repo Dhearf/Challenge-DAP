@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Masuk.css">
+    <title>Form Login</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="logo.svg"><b>TREVELEEN</b>
+        </div>
+        <h1> MASUK</h1>
+        <p style="color: gray;"> DHEA RACHMA FEBIANA</p>
+        <form>
+            <div class="form-group">
+                <label for="username">Username atau Email:</label>
+                <div style="position: relative;"> </div>
+                <input type="text" id="username" name="username" required placeholder="eyawidya@gmail.com" style="width: 95%;">
+            </div>
+            <div class="form-group">
+                <label for="password">Kata Sandi:</label>
+                <div style="position: relative;">
+                    <input type="password" id="password" name="password" required placeholder="*********" style="width: 95%;">
+                    <img src="eye-off.png"
+                        style="position: absolute; right: 10px; top: 40%; transform: translateY(-50%); cursor: pointer;">
+                </div>
+                <div class="additional-options">
+                    <label for="remember-me">
+                        <input type="checkbox" id="remember-me">
+                        Ingatkan Saya
+                    </label>
+                    <a href="#">Lupa Kata Sandi?</a>
+                </div>
+
+
+            </div>
+            <button type="submit">Masuk</button>
+            <p>
+                <span style="color: grey;">Tidak Punya Akun?</span>
+                <a class="register-link" style="color: #059669; text-decoration: none;" href="#"
+                    onclick="goToRegistration()">Daftar</a>
+            </p>
+        </form>
+    </div>
+    <script src="Masuk.js"></script>
+</body>
+
+</html>
