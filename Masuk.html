@@ -39,7 +39,7 @@
 
 
             </div>
-            <button type="submit">Masuk</button>
+            <button type="submit" id="Masuk">Masuk</button>
             <p>
                 <span style="color: grey;">Tidak Punya Akun?</span>
                 <a class="register-link" style="color: #059669; text-decoration: none;" href="#"
@@ -48,6 +48,12 @@
         </form>
     </div>
     <script src="Masuk.js"></script>
+    <script>
+        const masukButton = document.getElementById("Masuk");
+        masukButton.addEventListener("click", function() {
+            alert("Anda berhasil login");
+        });
+    </script>
 </body>
 
 </html>
